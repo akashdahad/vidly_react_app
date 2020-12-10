@@ -29,7 +29,6 @@ class Movies extends Component {
           </div>
           <div className="col-md-9">
             <h6>{this.getMessage(values)}</h6>
-            {console.log(movies)}
             <table className="table table-hover mt-3 ">
               <thead>
                 <tr>
