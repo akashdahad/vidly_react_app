@@ -4,8 +4,7 @@ class MoviesTable extends Component {
     const sortColumn = { ...this.props.sortColumn };
     if (sortColumn.path === path) {
       sortColumn.order = sortColumn.order === "asc" ? "desc" : "asc";
-    } 
-    else {
+    } else {
       sortColumn.path = path;
       sortColumn.order = "asc";
     }
@@ -21,7 +20,7 @@ class MoviesTable extends Component {
           <tr>
             <th
               style={{ cursor: "pointer" }}
-              onClick={() => this.rais("title")}
+              onClick={() => this.raiseSort("title")}
               scope="col"
             >
               Name <i className="fas fa-sort"></i>
