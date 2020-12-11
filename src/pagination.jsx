@@ -9,19 +9,19 @@ const Pagination = (props) => {
 
   return (
     <nav aria-label="Page navigation example">
-      <ul class="pagination">
+      <ul className="pagination">
         {pages.map((page) => (
           <li
             key={page}
-            class={page === currentPage ? "page-item active" : "page-item"}
+            className={page === currentPage ? "page-item active" : "page-item"}
           >
-            <a
-              class="page-link"
+            <span
+              className="page-link"
               style={{ cursor: "pointer" }}
               onClick={() => props.onPageChange(page)}
             >
               {page}
-            </a>
+            </span>
           </li>
         ))}
       </ul>

@@ -1,5 +1,3 @@
-import _ from "lodash";
-
 export function GenFilter(items, id) {
   console.log(id);
   if (id === null) {

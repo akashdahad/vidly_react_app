@@ -6,7 +6,7 @@ class Genre extends Component {
   };
   render() {
     return (
-      <ul class="list-group">
+      <ul className="list-group">
         <li
           className={
             this.props.currentgen === null
@@ -20,6 +20,7 @@ class Genre extends Component {
         </li>
         {this.state.genre.map((genre) => (
           <li
+            key={genre._id}
             className={
               this.props.currentgen === genre._id
                 ? "list-group-item active"
