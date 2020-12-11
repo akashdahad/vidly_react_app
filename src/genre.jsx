@@ -10,8 +10,8 @@ class Genre extends Component {
         <li
           className={
             this.props.currentgen === null
-              ? "list-group-item active"
-              : "list-group-item"
+              ? "list-group-item active list-group-item-action"
+              : "list-group-item list-group-item-action"
           }
           onClick={() => this.props.onGen(null)}
           style={{ cursor: "pointer" }}
@@ -23,8 +23,8 @@ class Genre extends Component {
             key={genre._id}
             className={
               this.props.currentgen === genre._id
-                ? "list-group-item active"
-                : "list-group-item"
+                ? "list-group-item  list-group-item-action active"
+                : "list-group-item list-group-item-action"
             }
             onClick={() => this.props.onGen(genre._id)}
             style={{ cursor: "pointer" }}

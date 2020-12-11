@@ -1,5 +1,4 @@
 export function GenFilter(items, id) {
-  console.log(id);
   if (id === null) {
     return items;
   }
